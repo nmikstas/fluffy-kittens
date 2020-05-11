@@ -2,33 +2,18 @@ import axios from "axios";
 
 export default
 {
-    //Gets all books.
-    getBooks: () =>
-    {
-        return axios.get("/api/books/");
-    },
+    //Create a user
+    createUser: userData => {return axios.post("/api/users/signup/", userData);},
 
-    // Gets the book with the given information link
-    getBook: title =>
-    {
-        return axios.get("/api/books/" + title);
-    },
+    //Login a user.
+    loginUser: userData => {return axios.post("/api/users/login/", userData);},
 
-    //Deletes the book with the given id.
-    deleteBook: id =>
-    {
-        return axios.delete("/api/books/" + id);
-    },
+    //Verify a user is logged in.
+    verify: () => {return axios.post("/api/users/verify/", null);},
 
-    // Saves a book to the database.
-    saveBook: bookData =>
-    {
-        return axios.post("/api/books/", bookData);
-    },
+    //Log the user out.
+    logout: () => {return axios.get("/api/users/logout/");},
 
-    //Search Google books API.
-    searchBooks: param =>
-    {
-      return axios.get("/api/search/" + param);
-    }
+    //Change the user's password.
+    password: password => {return axios.post("/api/users/password", password);}
 };

@@ -10,7 +10,7 @@ const Nav = () =>
                 exact
                 to="/"
             >
-                <div className="navbar-brand google-logo"></div>
+                <div className="navbar-brand"></div>
             </NavLink>
             
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
