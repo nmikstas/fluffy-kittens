@@ -22,31 +22,31 @@ const Nav = () =>
                     <li className="nav-item">
                         <NavLink
                             exact
-                            activeClassName="navbar__link--active"
-                            className="navbar__link"
+                            activeClassName="navbarLink--active"
+                            className="navbarLink"
                             to="/"
                         >
-                        Home
+                            Home
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink
                             exact
-                            activeClassName="navbar__link--active"
-                            className="navbar__link"
-                            to="/search"
+                            activeClassName="navbarLink--active"
+                            className="navbarLink"
+                            to="/login"
                         >
-                        Search
+                            Login
                         </NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink
                             exact
-                            activeClassName="navbar__link--active"
-                            className="navbar__link"
-                            to="/saved"
+                            activeClassName="navbarLink--active"
+                            className="navbarLink"
+                            to="/signup"
                         >
-                        Saved
+                            Signup
                         </NavLink>
                     </li>
                 </ul>

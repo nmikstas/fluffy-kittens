@@ -1,0 +1,12 @@
+.loginDiv
+{
+    background-color: #2881e738;
+    border-radius: 5px;
+}
+
+.loginDiv > h2
+{
+    color: #8b8b8b;
+    font-weight: bold;
+    font-size: 3rem;
+}
